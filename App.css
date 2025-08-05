@@ -1,1 +1,70 @@
-/* Minimal CSS placeholder */
+/* src/App.css */
+.container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.samples {
+  margin-bottom: 30px;
+}
+
+.sample-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sample-img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.sample-img:hover {
+  border: 2px solid #007bff;
+}
+
+.room {
+  text-align: center;
+}
+
+.curtain-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  min-height: 200px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  background-color: #f9f9f9;
+}
+
+.curtain-wrapper {
+  position: relative;
+}
+
+.curtain {
+  max-height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.clear-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
